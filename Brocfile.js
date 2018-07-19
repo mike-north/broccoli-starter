@@ -16,6 +16,10 @@ var jsFiles = new Funnel(projectFiles, {
   include: ['**/*.js']
 });
 
+var loaderFile = new Funnel('./node_modules/loader.js/lib/loader', {
+  include: ['**/*.js']
+});
+
 /* get a new node of only *.html files in the 'src' directory */
 var htmlFiles = new Funnel(projectFiles, {
   include: ['**/*.html']
@@ -25,18 +29,27 @@ var htmlFiles = new Funnel(projectFiles, {
 module.exports = new MergeTrees([
   cssFiles,
   new Concat(
-    new Babel(jsFiles, {
-      browserPolyfill: true,
-      presets: [
-        ['env', {
-          'targets': {
-            'browsers': ['last 1 versions']
-          },
-          exclude: ['transform-es2015-classes']
-        }]
-      ]
-    }),
-    { outputFile: 'out.js' }
-  ),
+    new MergeTrees([
+      loaderFile, 
+      new Babel(jsFiles, {
+        browserPolyfill: true,
+        plugins: ["transform-es2015-modules-amd"],
+        presets: [
+          ['env', {
+            'targets': {
+              'browsers': ['last 1 versions']
+            }
+          }]
+        ]
+      })],
+      {
+        outputFile: 'out.js',
+        headerFiles: ['loader.js'],
+        header: ";(function() {",
+        footer: "}());",
+        sourceMapConfig: { enabled: true }
+      }
+                  )
+  );
   htmlFiles
 ]);

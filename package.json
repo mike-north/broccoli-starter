@@ -13,7 +13,9 @@
     "broccoli-merge-trees": "*",
     "broccoli-babel-transpiler": "*",
     "babel-preset-env": "*",
-    "broccoli-livereload": "*"
+    "broccoli-livereload": "*",
+    "babel-plugin-transform-es2015-modules-amd": "*",
+    "loader.js": "*"
   },
   "author": "",
   "license": "ISC"

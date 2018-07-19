@@ -1,3 +1,3 @@
-import './app';
+import { foo as bar } from './app';
 
 alert('index');
