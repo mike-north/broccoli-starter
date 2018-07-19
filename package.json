@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "./node_modules/.bin/broccoli serve"
+  },
+  "dependencies": {
+    "broccoli": "*",
+    "broccoli-cli": "*",
+    "broccoli-stew": "*",
+    "broccoli-filter": "*",
+    "broccoli-concat": "*",
+    "broccoli-concat": "*"
+  }
+}
