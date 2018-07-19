@@ -32,7 +32,7 @@ module.exports = new MergeTrees([
           'targets': {
             'browsers': ['last 1 versions']
           },
-          loose: true
+          exclude: ['transform-es2015-classes']
         }]
       ]
     }),
