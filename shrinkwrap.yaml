@@ -3,6 +3,7 @@ dependencies:
   broccoli-cli: 1.0.0
   broccoli-concat: 3.4.0
   broccoli-filter: 1.3.0
+  broccoli-merge-trees: 3.0.0
   broccoli-stew: 2.0.0
 packages:
   /align-text/0.1.4:
@@ -1676,4 +1677,5 @@ specifiers:
   broccoli-cli: '*'
   broccoli-concat: '*'
   broccoli-filter: '*'
+  broccoli-merge-trees: '*'
   broccoli-stew: '*'

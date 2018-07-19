@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "./node_modules/.bin/broccoli serve"
+    "start": "./node_modules/.bin/broccoli build Brocfile.js"
   },
   "dependencies": {
     "broccoli": "*",
@@ -8,6 +8,6 @@
     "broccoli-stew": "*",
     "broccoli-filter": "*",
     "broccoli-concat": "*",
-    "broccoli-concat": "*"
+    "broccoli-merge-trees": "*"
   }
 }
