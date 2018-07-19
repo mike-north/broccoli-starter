@@ -2,7 +2,6 @@ var Funnel = require('broccoli-funnel');
 var Concat = require('broccoli-concat');
 var MergeTrees = require('broccoli-merge-trees');
 var Babel = require('broccoli-babel-transpiler');
-const BroccoliLivereload = require('broccoli-livereload');
 
 // root of our source files
 var projectFiles = 'src';
@@ -23,11 +22,6 @@ var htmlFiles = new Funnel(projectFiles, {
 });
 
 
-const reloadable = new BroccoliLivereload(projectFiles, {
-    target: 'index.html'
-})
-
-
 module.exports = new MergeTrees([
   cssFiles,
   new Concat(
@@ -37,11 +31,12 @@ module.exports = new MergeTrees([
         ['env', {
           'targets': {
             'browsers': ['last 1 versions']
-          }
+          },
+          loose: true
         }]
       ]
     }),
     { outputFile: 'out.js' }
   ),
-  reloadable
+  htmlFiles
 ]);
