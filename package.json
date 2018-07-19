@@ -10,7 +10,10 @@
     "broccoli-stew": "*",
     "broccoli-filter": "*",
     "broccoli-concat": "*",
-    "broccoli-merge-trees": "*"
+    "broccoli-merge-trees": "*",
+    "broccoli-babel-transpiler": "*",
+    "babel-preset-env": "*",
+    "broccoli-livereload": "*"
   },
   "author": "",
   "license": "ISC"

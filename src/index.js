@@ -1,1 +1,3 @@
+import './app';
+
 alert('index');
