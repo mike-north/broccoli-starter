@@ -3,9 +3,7 @@
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
+A [Broccoli.js](https://github.com/broccolijs/broccoli) powered web app starter
 
 
 Your Project
@@ -17,7 +15,7 @@ That's this file, where you can tell people what your cool website does and how 
 
 ### ← src/index.html
 
-Where you'll write the content of your website. 
+A HTML file to boot your app up
 
 ### ← src/*.css
 
@@ -25,11 +23,11 @@ CSS files add styling rules to your content.
 
 ### ← src/index.js
 
-The entry point for your application
+The JS entry point for your application
 
 ### ← src/*.js
 
-Other scripts, that are bundled together with your app
+Other scripts, that you may consume via es6 module imports
 
 ### ← assets
 
