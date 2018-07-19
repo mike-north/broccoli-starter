@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "./node_modules/.bin/broccoli build Brocfile.js"
+    "start": "rm -rf dist; ./node_modules/.bin/broccoli build dist"
   },
   "dependencies": {
     "broccoli": "*",
