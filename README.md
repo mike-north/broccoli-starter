@@ -1,4 +1,4 @@
-Welcome to Glitch
+🥦 ES6 Starter
 =================
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
@@ -15,23 +15,22 @@ Your Project
 
 That's this file, where you can tell people what your cool website does and how you built it.
 
-### ← index.html
+### ← src/index.html
 
 Where you'll write the content of your website. 
 
-### ← style.css
+### ← src/*.css
 
 CSS files add styling rules to your content.
 
-### ← script.js
+### ← src/index.js
 
-If you're feeling fancy you can add interactivity to your site with JavaScript.
+The entry point for your application
+
+### ← src/*.js
+
+Other scripts, that are bundled together with your app
 
 ### ← assets
 
 Drag in `assets`, like images or music, to add them to your project
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ

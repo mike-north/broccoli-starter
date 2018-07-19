@@ -50,7 +50,7 @@ var outputJs = new Concat(
     headerFiles: ['loader.js'],
     inputFiles: ['**/*'],
     header: ";(function() {",
-    footer: "require('index');}());",
+    footer: "window.onload = function() { require('index');} }());",
     sourceMapConfig: { enabled: true }
   }
 );

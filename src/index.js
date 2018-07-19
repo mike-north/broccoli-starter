@@ -1,4 +1,8 @@
 import { foo as bar } from './app';
 
-alert('index');
-bar();
+let messages = document.getElementById('messages');
+let li = document.createElement('li');
+li.appendChild(document.createTextNode('index.js was loaded'));
+messages.appendChild(li);
+
+bar(messages);
