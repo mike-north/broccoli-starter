@@ -17,7 +17,7 @@ var jsFiles = new Funnel(projectFiles, {
   include: ['**/*.js']
 });
 
-var loaderFile = new Funnel(path.join(require.resolve('loader.js'), '..'), {
+var loader = new Funnel(path.join(require.resolve('loader.js'), '..'), {
   include: ['loader.js']
 });
 
@@ -26,32 +26,37 @@ var htmlFiles = new Funnel(projectFiles, {
   include: ['**/*.html']
 });
 
+const BABEL_OPTIONS = {
+  browserPolyfill: true,
+  plugins: ["transform-es2015-modules-amd", "amd-namer"],
+  moduleIds: true,
+  presets: [
+    ['env', {
+      'targets': {
+        'browsers': ['last 1 versions']
+      }
+    }]
+  ]
+};
+
 var allJs = new MergeTrees([
-  loaderFile, 
-  new Babel(jsFiles, {
-    browserPolyfill: true,
-    plugins: ["transform-es2015-modules-amd"],
-    presets: [
-      ['env', {
-        'targets': {
-          'browsers': ['last 1 versions']
-        }
-      }]
-    ]
-  })]
+  loader,
+  new Babel(jsFiles, BABEL_OPTIONS)]
+);
+
+var outputJs = new Concat(
+  allJs, {
+    outputFile: 'out.js',
+    headerFiles: ['loader.js'],
+    inputFiles: ['**/*'],
+    header: ";(function() {",
+    footer: "require('index');}());",
+    sourceMapConfig: { enabled: true }
+  }
 );
 
 module.exports = new MergeTrees([
   cssFiles,
-  new Concat(
-    allJs, {
-      outputFile: 'out.js',
-      headerFiles: ['loader.js'],
-      inputFiles: ['**/*'],
-      header: ";(function() {",
-      footer: "require('./index.js');}());",
-      sourceMapConfig: { enabled: true }
-    }
-  ),
+  outputJs,
   htmlFiles
 ]);

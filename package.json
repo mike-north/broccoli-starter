@@ -15,7 +15,8 @@
     "babel-preset-env": "*",
     "broccoli-livereload": "*",
     "babel-plugin-transform-es2015-modules-amd": "*",
-    "loader.js": "*"
+    "loader.js": "*",
+    "babel-plugin-amd-namer": "*"
   },
   "author": "",
   "license": "ISC"
