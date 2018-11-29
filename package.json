@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "rm -rf dist & ./node_modules/.bin/broccoli build dist",
-    "start": "./node_modules/.bin/broccoli serve --port $PORT",
+    "start": "./node_modules/.bin/broccoli serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
