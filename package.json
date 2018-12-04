@@ -21,6 +21,6 @@
   "author": "Mike North <michael.l.north@gmail.com> (https://mike.works)",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "@mike-north/js-lib-renovate-config": "1.0.0"
+    "@mike-north/js-lib-renovate-config": "1.1.1"
   }
 }
