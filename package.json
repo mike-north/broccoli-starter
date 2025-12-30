@@ -14,7 +14,7 @@
     "broccoli-concat": "*",
     "broccoli-filter": "^1.3.0",
     "broccoli-livereload": "^1.3.0",
-    "broccoli-merge-trees": "^3.0.2",
+    "broccoli-merge-trees": "^4.0.0",
     "broccoli-stew": "^2.0.1",
     "loader.js": "^4.7.0"
   },
