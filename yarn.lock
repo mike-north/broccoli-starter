@@ -108,9 +108,9 @@
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
 "@types/node@*":
-  version "25.2.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.2.2.tgz#0ddfe326c326afcb3422d32bfe5eb2938e1cb5db"
-  integrity sha512-BkmoP5/FhRYek5izySdkOneRyXYN35I860MFAGupTdebyE66uZaR+bXLHq8k4DirE5DwQi3NuhvRU1jqTVwUrQ==
+  version "25.2.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.2.3.tgz#9c18245be768bdb4ce631566c7da303a5c99a7f8"
+  integrity sha512-m0jEgYlYz+mDJZ2+F4v8D1AyQb+QzsNqRuI7xg1VQX/KlKS0qT9r1Mo16yo5F/MtifXFgaofIFsdFMox2SxIbQ==
   dependencies:
     undici-types "~7.16.0"
 
@@ -912,21 +912,18 @@ broccoli-cli@^1.0.0:
     resolve "~0.6.1"
 
 broccoli-concat@*:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/broccoli-concat/-/broccoli-concat-4.2.5.tgz#d578f00094048b5fc87195e82fbdbde20d838d29"
-  integrity sha512-dFB5ATPwOyV8S2I7a07HxCoutoq23oY//LhM6Mou86cWUTB174rND5aQLR7Fu8FjFFLxoTbkk7y0VPITJ1IQrw==
+  version "4.2.7"
+  resolved "https://registry.yarnpkg.com/broccoli-concat/-/broccoli-concat-4.2.7.tgz#312cb0579303973bcda041511123c1fa504d6a34"
+  integrity sha512-JePfBFwHtZ2FR33PBZQA99/hQ4idIbZ205rH84Jw6vgkuKDRVXWVzZP2gvR2WXugXaQ1fj3+yO04b0QsstNHzQ==
   dependencies:
     broccoli-debug "^0.6.5"
-    broccoli-kitchen-sink-helpers "^0.3.1"
     broccoli-plugin "^4.0.2"
     ensure-posix-path "^1.0.2"
     fast-sourcemap-concat "^2.1.0"
     find-index "^1.1.0"
     fs-extra "^8.1.0"
     fs-tree-diff "^2.0.1"
-    lodash.merge "^4.6.2"
-    lodash.omit "^4.1.0"
-    lodash.uniq "^4.2.0"
+    lodash "^4.17.23"
 
 broccoli-debug@^0.6.5:
   version "0.6.5"
@@ -1223,9 +1220,9 @@ can-symlink@^1.0.0:
     tmp "0.0.28"
 
 caniuse-lite@^1.0.30000844:
-  version "1.0.30001769"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001769.tgz#1ad91594fad7dc233777c2781879ab5409f7d9c2"
-  integrity sha512-BCfFL1sHijQlBGWBMuJyhZUhzo7wer5sVj9hqekB/7xn0Ypy+pER/edCYQm4exbXj4WiySGp40P8UuTh6w1srg==
+  version "1.0.30001770"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001770.tgz#4dc47d3b263a50fbb243448034921e0a88591a84"
+  integrity sha512-x/2CLQ1jHENRbHg5PSId2sXq1CIO1CISvwWAj027ltMVG2UNgW+w9oH2+HzgEIRFembL8bUlXtfbBHR1fCg2xw==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -2469,22 +2466,7 @@ loader.js@^4.7.0:
   resolved "https://registry.yarnpkg.com/loader.js/-/loader.js-4.7.0.tgz#a1a52902001c83631efde9688b8ab3799325ef1f"
   integrity sha512-9M2KvGT6duzGMgkOcTkWb+PR/Q2Oe54df/tLgHGVmFpAmtqJ553xJh6N63iFYI2yjo2PeJXbS5skHi/QpJq4vA==
 
-lodash.merge@^4.6.2:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
-  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
-
-lodash.omit@^4.1.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
-  integrity sha512-XeqSp49hNGmlkj2EJlfrQFIzQ6lXdNro9sddtQzcJY8QaoC2GO0DT7xaIokHeyM+mIT0mPMlPvkYzg2xCuHdZg==
-
-lodash.uniq@^4.2.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
-  integrity sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==
-
-lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.4:
+lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.23, lodash@^4.17.4:
   version "4.17.23"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.23.tgz#f113b0378386103be4f6893388c73d0bde7f2c5a"
   integrity sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==
